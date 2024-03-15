@@ -1,0 +1,222 @@
+
+.newsevent-header{
+    display: flex;
+    flex-direction:column;
+     color: transparent;
+    text-align: center;
+    animation: effect 5s linear infinite;       
+height: 140px;
+  }
+
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(#192219, #488b48);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#01302b, #01064d);
+        -webkit-background-clip: text;
+    }
+}
+.newsevent-container-one{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 80%;
+    gap: 250px;  
+}
+.newsevent-para{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 400px;
+  font-weight: 600;
+}
+
+.newsevent-image{
+    height: 300px; 
+    animation: mymove 5s infinite;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 30px blue;}
+  }
+
+  .newsevent-container-two{
+    display: flex;
+    flex-wrap: wrap;
+margin: 50px auto;
+max-width: 80%;
+gap: 200px;
+  }
+  .newsevent-para-two{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    max-width: 500px;
+  font-weight: 500;
+  padding: 10px;
+  }
+  .newsevent-para-two-image{
+    height: 350px;
+    width: 350px;
+    animation: move 8s infinite;
+    border-radius: 8px;
+  }
+  @keyframes move {
+    50% {box-shadow: 10px 20px 30px rgb(43, 39, 21);}
+  }
+
+  .newsevent-container-three{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 80%;
+    gap: 250px;  
+  }
+  .newsevent-para-three{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    max-width: 400px;
+  font-weight: 600;
+  }
+  .newsevent-image-three{
+    height: 300px; 
+    /* box-shadow: 10px 10px 10px 10px ; */
+    animation: wave 5s infinite;
+    border-radius: 8px;
+  }
+  @keyframes wave {
+    50% {box-shadow: 10px 20px 30px rgb(0, 42, 66);}
+  }
+
+  .newsevent-container-four{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 80%;
+    gap: 250px;  
+  }
+  .newsevent-para-four{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    max-width: 400px;
+  font-weight: 600;
+  }
+  .newsevent-image-four{
+    height: 300px; 
+    animation: wavefour 3s infinite;
+    border-radius: 8px;
+  }
+  @keyframes wavefour {
+    50% {box-shadow: 10px 20px 30px rgb(112, 62, 248);}
+  }
+
+
+  .newsevent-container-five{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 80%;
+    gap: 250px; 
+  }
+  .newsevent-para-five{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 400px;
+  font-weight: 600;
+  }
+  .newsevent-image-five{
+    height: 280px;
+    /* box-shadow: 10px 10px 10px 10px ; */
+    animation: wavefive 5s infinite;
+    border-radius: 8px;
+  }
+  @keyframes wavefive {
+    50% {box-shadow: 10px 20px 30px rgb(51, 46, 34);}
+  }
+
+  .newsevent-container-six{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 80%;
+    gap: 200px;  
+  }
+  .newsevent-para-six{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    max-width: 400px;
+  font-weight: 600;
+  }
+  .newsevent-image-six{
+    height: 400px; 
+    /* box-shadow: 10px 10px 10px 10px ; */
+    animation: wavesix 3s infinite;
+    border-radius: 8px;
+  }
+  @keyframes wavesix {
+    50% {box-shadow: 10px 20px 30px rgb(2, 37, 36);}
+  }
+/* -----------------para css---------------- */
+.newsevent-para h5{
+  transition: transform .2s; 
+  color: rgb(16, 0, 17);
+}
+.newsevent-para h5:hover {
+  transform: scale(1.1); 
+  color: rgb(0, 46, 46);
+}
+
+.newsevent-para-two h5{
+  transition: transform .2s; 
+  color: rgb(0, 46, 46);
+}
+.newsevent-para-two h5:hover {
+  transform: scale(1.1); 
+  color: rgb(16, 0, 17);
+}
+
+.newsevent-para-three h5{
+  transition: transform .2s; 
+  color: rgb(16, 0, 17);
+}
+.newsevent-para-three h5:hover {
+  transform: scale(1.1); 
+  color: rgb(0, 46, 46);
+}
+.newsevent-para-four h5{
+  transition: transform .2s; 
+  color: rgb(0, 46, 46);
+
+}
+.newsevent-para-four h5:hover {
+  transform: scale(1.1); 
+  color: rgb(16, 0, 17);
+}
+.newsevent-para-five h5{
+  transition: transform .2s; 
+  color: rgb(16, 0, 17);
+}
+.newsevent-para-five h5:hover {
+  transform: scale(1.1); 
+  color: rgb(0, 46, 46);
+}
+
+.newsevent-para-six h5{
+  transition: transform .2s; 
+  color: rgb(0, 46, 46);
+
+}
+.newsevent-para-six h5:hover {
+  transform: scale(1.1); 
+  color: rgb(16, 0, 17);
+}

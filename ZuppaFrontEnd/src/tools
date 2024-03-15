@@ -1,0 +1,131 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDmRntBTuw6LardVayLG3nLN4b3oxBcY-8",
+  authDomain: "zuppawe.firebaseapp.com",
+  projectId: "zuppawe",
+  storageBucket: "zuppawe.appspot.com",
+  messagingSenderId: "620345780556",
+  appId: "1:620345780556:web:f683e0ff802f9e06de07e9",
+  measurementId: "G-83FJL05WB0"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+////////////////////////////////
+// ShoppingNow.js
+import React,{useState} from 'react';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import '../App.css'; 
+import military from '../assets/images/miltary.jpg';
+import trainerdrone from '../assets/images/Trainerdrone.jpg';
+import Navgati from '../assets/images/navigati.png';
+
+
+
+
+
+function ShoppingNow() {
+  const [cart, setCart] = useState([]);
+
+
+  const products = [
+    { name: 'MilitaryDrone', price: 559500, available: 3 , description: 'Advanced autopilot system with GPS navigation and obstacle avoidance.', image:military},
+    { name: 'Motherboard', price: 10000,available: 3 , description: 'High-performance motherboard with support for the latest processors and ample connectivity options.', image:Navgati },
+    { name: 'Drone', price: 35000, available: 3 , description: 'Professional-grade drone with 4K camera, long flight time, and intelligent flight modes.', image:trainerdrone }
+  ];
+  
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
+
+  const removeFromCart = (index) => {
+    const newCart = [...cart];
+    newCart.splice(index, 1);
+    setCart(newCart);
+  };
+
+  return (
+      <>
+      <Header/>
+      <div className="shopnowpage">
+ 
+ 
+
+
+
+      <div className="products">
+        {products.map((product, index) => (
+          <Product
+            key={index}
+            name={product.name}
+            price={product.price}
+            available={product.available}
+            description={product.description}
+            image={product.image}
+            onAddToCart={() => addToCart(product)}
+          />
+        ))}
+      </div>
+      <Cart cart={cart} removeFromCart={removeFromCart} />
+    </div>
+       <Footer/>
+        </>
+  );
+}
+
+export default ShoppingNow;
+
+
+
+function Product({ name, price, image, onAddToCart ,available, description}) {
+  return (
+    <div className="product" style={{ background: 'linear-gradient(to bottom right, white, tan)', padding: '10px', marginBottom: '20px' }}>
+       <h3>{name}</h3>
+      <img src={image} alt={name} />
+      <div className="product-details">
+       
+        <p>  <span style={{ fontWeight: 'bold' }}>Rs:</span> {price}</p>
+        <p> <span style={{ fontWeight: 'bold' }}>Available: </span> {available}</p>
+
+        <p><span style={{ fontWeight: 'bold' }}>Description: </span>{description}</p>
+      
+      </div>
+      <button style={{backgroundColor: 'black ', color: 'white',width: '90px', height: '48px' }}onClick={onAddToCart}>Add to Cart</button>
+    </div>
+  );
+}
+
+function Cart({ cart, removeFromCart }) {
+  return (
+    <div className="cart"  style={{ background: 'linear-gradient(to bottom right, white, #81E692)'}}>
+      <h2>Cart</h2>
+      <div className="cart-items">
+        {cart.map((item, index) => (
+          <div key={index} className="cart-item">
+            <img src={item.image} alt={item.name} />
+            <div>
+              <h4>{item.name}</h4>
+              <p> <span style={{ fontWeight: 'bold' }}>Rs:</span>{item.price}</p>
+              <p><span style={{ fontWeight: 'bold' }}>Available: </span>{item.available}</p>
+             <p> <span style={{ fontWeight: 'bold' }}>Description: </span>{item.description} </p>
+              <></>
+              
+              <button  style={{backgroundColor: 'tomato  ',color: 'black' ,width: '90px', height: '40px', fontWeight: 'bolder' }}onClick={() => removeFromCart(index)}>Remove</button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div> 
+  );
+}
+/////////////////

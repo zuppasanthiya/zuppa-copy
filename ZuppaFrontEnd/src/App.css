@@ -1,0 +1,464 @@
+
+/* App.css */
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movingObject {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  animation: moveObject 2s linear infinite alternate;
+}
+
+@keyframes moveObject {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200px); /* Change this value to adjust the distance */
+  }
+}
+
+
+.news-ticker {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-slide 20s linear infinite; /* Adjust animation duration */
+  font-weight: bold;
+  
+}
+
+.news-ticker1 {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+
+}
+
+.ticker-content1 {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-slide 20s linear infinite; /* Adjust animation duration */
+  font-weight: bold;
+  
+}
+
+
+.ticker-content span {
+  padding-right: 50px; /* Adjust spacing between news items */
+}
+
+@keyframes ticker-slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust distance to move the content */
+  }
+}
+
+.video-background {
+
+ max-width: 500;
+}
+
+/* //image-slider// */
+.image-slider {
+  width: 100%; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  overflow: hidden;
+  position: relative; /* Ensure relative positioning for absolute positioning of images */
+}
+
+
+.image-slider img {
+  width: 60%;
+  height: auto;
+  position: absolute; /* Use absolute positioning for precise placement */
+  right:0 ; /* Move the image to the right edge of its container */
+  transition: transform 0.5s ease; /* Smooth transition for animation */
+}
+
+.image-slider2 {
+  width: 100%; /* Adjust as needed */
+ /* Adjust as needed */
+  overflow: hidden;
+   /* Ensure relative positioning for absolute positioning of images */
+}
+
+
+
+.image-slider2 img {
+  width: 60%;
+  height: auto;
+  position: absolute; /* Use absolute positioning for precise placement */
+  right:0 ; /* Move the image to the right edge of its container */
+  transition: transform 0.5s ease; /* Smooth transition for animation */
+  
+}
+
+
+.image-text-slider {
+  display: flex;
+
+  
+}
+/* .motherboards{
+margin-bottom: 100px;
+} */
+
+
+.text {
+  flex: 1;
+  padding: 5px  20px;
+  margin: 5px 20px;
+
+}
+
+.typing-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.colorful-box {
+  width: 400px;
+  height: 450px;
+ border-radius: 3;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px; /* Add margin to create space between boxes */
+
+}
+
+.text {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-board{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-wrapper {
+  position: relative;
+  margin-right: 20px; /* Adjust spacing between images */
+}
+
+.image-content {
+  position: absolute;
+  top: 10px; /* Adjust the top position if needed */
+  left: 70px; /* Adjust the left position if needed */
+  right: 70px; /* Adjust the right position if needed */
+  bottom: 10px; 
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #ccc;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+
+}
+
+.image-wrapper:hover .image-content {
+  opacity: 1;
+}
+
+/* Additional styling */
+.image {
+  max-width: 500px;
+  height: 400px;
+  cursor: pointer;
+  margin: 0 70px;
+}
+
+.logo-ticker-container {
+  overflow: hidden;
+}
+
+.logo-ticker {
+  display: flex;
+  animation: ticker 10s linear infinite;
+}
+
+.logo {
+  margin-right: 20px; /* Adjust spacing between logos */
+  height: 80px; /* Adjust logo height as needed */
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+ /* drone image slider */
+
+.droneimage-slider {
+  position: relative;
+}
+                                                                                                     
+.center-image {
+  margin-bottom: 20px;
+  
+}
+
+
+.center-image img {
+  max-width: 700px; /* Adjust the maximum width as needed */
+  max-height:700px; /* Adjust the maximum height as needed */
+  left: 200px;
+  position: absolute; /* Set the image to absolute positioning */
+  top: 850px; /* Position the image vertically centered */
+  left: 50%; /* Position the image horizontally centered */
+  transform: translate(-50%, -50%); /* Center the image precisely */
+}
+
+.arrow {
+  position: absolute;
+  top: 825px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: 10px;
+
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+
+
+
+.thumbnail:hover,
+.thumbnail.active {
+  opacity: 1;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -900px;
+  left: 10px;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.thumbnail.left {
+  position: absolute;
+  left:40px; /* Adjust the left position as needed */
+}
+
+.thumbnail.right {
+  position: absolute;
+  right: 10px; /* Adjust the right position as needed */
+
+}
+
+.thumbnail.left,
+.thumbnail.right {
+  width: 200px; /* Adjust the width of left and right thumbnails */
+  height: 200px; /* Maintain aspect ratio */
+}
+
+
+ /* image drone slider heading */ 
+.center-image h2 {
+  position: absolute;
+  top: 580px; /* Adjust the top position as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  margin: 0; /* Remove default margin */
+
+}
+.video-container {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 30px;
+  margin-right:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+shopping now
+.shopnowpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px; /* Adjust the margin bottom as needed */
+  bottom: 100px;
+
+}
+
+.product {
+  margin: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-details {
+  margin-bottom: 10px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-items {
+  display: flex;
+  /* flex-wrap: wrap; Allow items to wrap to the next line */
+  overflow-x: auto;
+}
+
+.cart-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.cart-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cart-item button {
+  margin-top: 5px;
+}
+
+
+.cart-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 1300px;
+  margin-top: -40px;
+
+
+
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+}
+
+.TitleBlink {
+  animation: slideIn 3s ease-out infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 37% }
+}
+
+.TitleTyping {
+  overflow: hidden;
+  border-right: .15em solid rgb(20, 21, 30);
+  white-space: nowrap;
+  animation: typing 5s steps(50, end) infinite;
+}

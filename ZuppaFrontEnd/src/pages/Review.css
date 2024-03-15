@@ -1,0 +1,28 @@
+.review-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    margin: 30px auto;
+gap: 30px;
+}
+.card-container{
+padding: 10px;
+
+}
+.card-container h6{
+   color: rgb(2, 4, 87);
+    
+    }
+.personlogo{
+    margin-left: 90%;
+    margin-top: -80px;
+}
+.card-name{
+    color: rgb(12, 75, 0);
+    
+}
+.paratag {
+    color:black;
+    font-weight: 600;
+ }
+

@@ -1,0 +1,160 @@
+/* .about-container{
+    background: url("https://qph.cf2.quoracdn.net/main-qimg-ab9d23440631559f916a0339466275f0");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    margin: 40px auto;
+    
+    } */
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  background-repeat: no-repeat;
+  /* opacity: 0.6;  */
+  transition: transform 0.2s;
+  color: rgb(51, 53, 54);
+}
+.about-header:hover {
+  transform: scale(1.1);
+  color: rgb(51, 33, 53);
+}
+.about-container-one {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 90%;
+  padding: 10px;
+  gap: 250px;
+  background-color: rgba(255, 139, 139, 0.3);
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 500px;
+  height: 450px;
+  font-weight: 600;
+}
+
+.about-container-two {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 90%;
+  gap: 200px;
+  padding: 10px;
+  background-color: rgba(40, 214, 226, 0.171);
+}
+
+.about-para-two {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 500px;
+  font-weight: 600;
+  padding: 10px;
+}
+.about-para-two span {
+  color: red;
+}
+.about-para-two-image {
+  height: 350px;
+  width: 350px;
+}
+
+.about-container-three {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 90%;
+  gap: 200px;
+  padding: 10px;
+  background-color: rgba(168, 114, 152, 0.158);
+}
+
+.about-para-three {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 500px;
+  font-weight: 600;
+}
+
+.about-para-three-image {
+  height: 350px;
+  width: 350px;
+}
+
+.image-two {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.span-tag {
+  color: rgb(19, 19, 179);
+  font-size: 20px;
+}
+/* ------------------------drone------------------------------------------ */
+.drones-container-one {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  max-width: 90%;
+  padding: 10px;
+  gap: 260px;
+  background-color: rgba(142, 187, 201, 0.3);
+}
+.drones-about-para {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 500px;
+  height: 450px;
+  font-weight: 600;
+  margin: 30px;
+}
+
+/* --------------------autopilot-------------------- */
+.autopilot-container-one {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px;
+  margin-top: 20px;
+  max-width: 90%;
+  padding: 10px;
+  gap: 260px;
+  background-color: rgba(215, 236, 97, 0.3);
+}
+.autopilot-about-para {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 500px;
+  height: 450px;
+  font-weight: 600;
+  margin: 30px;
+}
+/* --------------project=--------------------------- */
+.project-container-one {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px;
+  margin-top: 20px;
+  max-width: 90%;
+  padding: 10px;
+  gap: 260px;
+  background-color: rgba(174, 159, 216, 0.3);
+}
+.project-about-para {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 500px;
+  height: 350px;
+  font-weight: 600;
+  margin: 30px;
+}

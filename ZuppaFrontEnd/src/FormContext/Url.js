@@ -1,0 +1,1 @@
+export const API_URL="https://65f13bf1da8c6584131d2154.mockapi.io/zuppa/users"
